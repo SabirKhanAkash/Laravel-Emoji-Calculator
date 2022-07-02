@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/calculate','CalcController@calc');
+Route::post('/calculate','CalcController@calc'); //For routing the controller

@@ -2,54 +2,59 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <title>Emoji Calculator</title>
-        <link rel="stylesheet" href="css/app.css">
+        <!-- Linked the app.css file -->
+        <link rel="stylesheet" href="css/app.css">   
     </head>
     <body>
+        <!-- Main app div -->
         <div class="app">
+            <!-- container div -->
             <div class='container'>
-            <h1>Welcome to Emoji Calculator🧮</h1>
+                <!-- HEADING -->
+                <h1>Welcome to Emoji Calculator🧮</h1>
 
-            <form class="form-horizontal" method="POST" action='/calculate'>
-                {{ csrf_field() }}
-    
-                <input type="number" name="firstNum" class="textBox" placeholder="Enter a number"/><br></br>
-                <input type="number" name="secondNum" class="textBox" placeholder="Enter another number"/>
-                
-                <p>Select Operator-->&nbsp;
-                <select class='op' name="ops" required>
-                    <option value="" selected=""></option>
-                    <option value="plus">👽</option>
-                    <option value="min">💀</option>
-                    <option value="mult">👻</option>
-                    <option value="div">😱</option>
-                </select></p>
-        
-                <button type="submit" class='btn'>Calculate</button>
-                
-                <div class="row text-center">
-                <div class="col-md-2"> 
+                <!-- POST method FORM for sending user input request -->
+                <form class="form-horizontal" method="POST" action='/calculate'>
+                    <!-- Token for PHP -->
+                    {{ csrf_field() }}
 
-                </div>
-                <br>
-                <div class="col-md-6"> 
-                    @if(session('info'))
-                        <div style="color: rgb(255, 255, 255); font-size: 35px">
-                            {{ session('info')}}
+                    <!-- Input field for number -->
+                    <input type="number" name="firstNum" class="textBox" placeholder="Enter a number"/><br></br>
+                    <input type="number" name="secondNum" class="textBox" placeholder="Enter another number"/>
+                    
+                    <!-- Input field for operator -->
+                    <p>Select Operator-->&nbsp;
+                    <select class='op' name="ops" required>
+                        <option value="" selected=""></option>
+                        <option value="plus">👽</option>
+                        <option value="min">💀</option>
+                        <option value="mult">👻</option>
+                        <option value="div">😱</option>
+                    </select></p>
+            
+                    <!-- Button for calculation -->
+                    <button type="submit" class='btn'>Calculate</button>
+                    
+                    <!-- div section for displaying the result -->
+                    <div class="row text-center">
+                        <div class="col-md-2"> 
+
                         </div>
-                    @endif
-                </div>
-                <div class="col-md-2">
-                
-                <div>
-            </div>
+                        <br>
+                        <div class="col-md-6"> 
+                            <!-- if result is in session then display -->
+                            @if(session('info'))
+                                <div style="color: rgb(255, 255, 255); font-size: 35px">
+                                    {{ session('info')}}
+                                </div>
+                            @endif
+                        </div>
+                        <div class="col-md-2">
+                        
+                        <div>
+                    </div>
                 </div>
             </form>
-
-            
-
-            
-            
-        
         </div>
         
 
