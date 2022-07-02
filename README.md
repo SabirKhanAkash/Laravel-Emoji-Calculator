@@ -1,3 +1,55 @@
+## Approach
+
+In the master branch all default laravel boilerplate code was commited. 
+Then in the development branch I firstly started editing on "Laravel-Emoji-Calculator\resources\views\welcome.blade.php" file
+there my basic frontend structure of the site was initialized. 
+
+Then I added my custom CSS file and bootstrap in the 
+```bash
+Laravel-Emoji-Calculator\public\css\app.css
+```
+for styling the site.
+After that I created a controller for handling the calculation in the server side. I make a controller by typing in the terminal 
+```bash
+php artisan make:controller CalcController
+```
+then I added the controller connection with the route in 
+```bash
+Laravel-Emoji-Calculator\routes\web.php
+```
+
+## Steps to Run
+### Step 1: 
+Download PHP 8.1.7 from here https://windows.php.net/downloads/releases/php-8.1.7-Win32-vs16-x64.zip then extract it to C:/Program Files/
+After that set this directory link to the path in environment variable.
+
+### Step 2: 
+Download and install Composer from here https://getcomposer.org/Composer-Setup.exe and in terminal type 
+```bash
+composer global require laravel/installer
+```
+
+### Step 3: 
+Install WAMP from here https://www.wampserver.com/en/download-wampserver-64bits/ and go to where you installed wamp and go to "C:\wamp64\www\" (if you install wamp in in C drive) and extract my project folder there.
+
+### Step 4: 
+Now double click and open wamp software and then go to open the project directory and open terminal there and type
+
+```bash
+php artisan serve
+```
+
+### Step 5:
+After that goto the http://127.0.0.1:8000/ from your browser to see the output. 
+
+### Demo: 
+[DEMO](https://drive.google.com/file/d/1c_LcUKp6wurhwSaGnTEczWgDB-68Nm-o/view?usp=sharing)
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
