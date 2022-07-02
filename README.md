@@ -1,8 +1,14 @@
+## ** IMPORTANT ** 
+Master branch contains only the default boilerplate code of the Laravel Framework and My developed code is in Development Branch
+
 ## Approach
 
 In the master branch all default laravel boilerplate code was commited. 
-Then in the development branch I firstly started editing on "Laravel-Emoji-Calculator\resources\views\welcome.blade.php" file
-there my basic frontend structure of the site was initialized. 
+Then in the development branch I firstly started editing on 
+```bash
+Laravel-Emoji-Calculator\resources\views\welcome.blade.php
+```
+file there my basic frontend structure of the site was initialized. 
 
 Then I added my custom CSS file and bootstrap in the 
 ```bash
@@ -43,7 +49,7 @@ php artisan serve
 After that goto the http://127.0.0.1:8000/ from your browser to see the output. 
 
 ### Demo: 
-[DEMO](https://drive.google.com/file/d/1c_LcUKp6wurhwSaGnTEczWgDB-68Nm-o/view?usp=sharing)
+https://user-images.githubusercontent.com/39434260/177014478-17ba2842-5d36-43fe-ba4d-01e0aa630056.mp4
 
 
 
