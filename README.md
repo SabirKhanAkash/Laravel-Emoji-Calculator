@@ -4,8 +4,11 @@ Master branch contains only the default boilerplate code of the Laravel Framewor
 ## Approach
 
 In the master branch all default laravel boilerplate code was commited. 
-Then in the development branch I firstly started editing on "Laravel-Emoji-Calculator\resources\views\welcome.blade.php" file
-there my basic frontend structure of the site was initialized. 
+Then in the development branch I firstly started editing on 
+```bash
+Laravel-Emoji-Calculator\resources\views\welcome.blade.php
+```
+file there my basic frontend structure of the site was initialized. 
 
 Then I added my custom CSS file and bootstrap in the 
 ```bash
