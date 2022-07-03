@@ -1,3 +1,7 @@
+# LARAVEL EMOJI CALCULATOR
+### Md. Shabir Khan Akash
+### Dept. of CSE, RUET
+
 ## ** IMPORTANT ** 
 Master branch contains only the default boilerplate code of the Laravel Framework and My developed code is in Development Branch
 
